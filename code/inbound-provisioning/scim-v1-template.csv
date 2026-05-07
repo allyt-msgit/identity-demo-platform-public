@@ -1,0 +1,4 @@
+NewUserPrincipalName,FirstName,LastName,FullName,Department,Company,JobTitle,MobilePhone,EmployeeId
+user01@example.com,Dean,Frost,Dean Frost,IT,Proseware,SOC Analyst,+447700900001,23345
+user02@example.com,Mint,Slice,Mint Slice,Finance,Proseware,HR Director,+447700900002,12345
+user03@example.com,George,Bell,George Bell,Marketing,Proseware,Marketing Manager,+447700900003,77890
