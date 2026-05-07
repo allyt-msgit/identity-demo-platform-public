@@ -1,4 +1,4 @@
 NewUserPrincipalName,FirstName,LastName,FullName,Department,CostCenter,Company,Location,JobTitle,MobilePhone,EmployeeType,EmployeeId,EmployeeHireDate,EmployeeLeaveDate,UsageLocation,ManagerUserPrincipalName
 user03@example.com,George,Bell,George Bell,Marketing,CC300,Proseware,Cheltenham,Marketing Manager,+447700900003,Permanent,77890,2026-05-06,,GB,
 user02@example.com,Mint,Slice,Mint Slice,Finance,CC200,Proseware,Manchester,HR Director,+447700900002,Permanent,12345,2026-05-06,,GB,manager@example.com
-user04@example.com,Disco,Brown,Disco Brown,Security,CC400,Proseware,London,Security Analyst,+447700900004,Permanent,88991,2026-05-04,,GB,manager@example.com
+user04@example.com,Disco,Brown,Disco Brown,Security,CC400,Proseware,London,Security Analyst,+447700900004,Permanent,88991,,2026-05-07,GB,manager@example.com

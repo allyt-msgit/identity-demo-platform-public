@@ -23,7 +23,13 @@ Ask Copilot Chat to update `scim-lifecycle-template.csv` with a new joiner row.
 
 Suggested prompt:
 
-"Add a new row in `code/inbound-provisioning/scim-lifecycle-template.csv` for Disco Brown as a joiner. Use EmployeeHireDate 2026-05-04, blank EmployeeLeaveDate, UsageLocation GB, and ManagerUserPrincipalName manager@example.com. Keep all required fields populated."
+"Add a new row in `code/inbound-provisioning/scim-lifecycle-template.csv` for Disco Brown as a joiner. Set NewUserPrincipalName user04@example.com, FirstName Disco, LastName Brown, FullName Disco Brown, Department Security, CostCenter CC400, Company Proseware, Location London, JobTitle Security Analyst, MobilePhone +447700900004, EmployeeType Permanent, EmployeeId 88991, EmployeeHireDate 2026-05-04, EmployeeLeaveDate blank, UsageLocation GB, and ManagerUserPrincipalName manager@example.com. Keep all columns populated except EmployeeLeaveDate for a joiner."
+
+Important:
+
+- Include `Location` and `UsageLocation` every time so licensing and location-based policy logic can execute correctly.
+- Treat `NewUserPrincipalName` as the primary mail/sign-in attribute for this lifecycle template.
+- This template does not include a separate `MailNickname` column. If you need mail alias attributes in the demo, use the v1 template flow or extend the lifecycle schema first.
 
 ### 1.2 Joiner row example
 
@@ -140,3 +146,15 @@ Finally, show:
 7. Sign in as new user and request `global-security-teams`
 8. Show GSA access on `cturnbull` Windows 365 VM
 9. Switch user to leaver and rerun the same automation
+
+## 9. Next Time Improvements
+
+1. Add GSA client deployment to Intune build baseline so endpoint setup is consistent before the demo.
+2. Extend lifecycle schema to include extra profile attributes for richer demos, for example:
+	- MailNickname
+	- StreetAddress
+	- City
+	- Country
+	- OfficeLocation
+3. Update mapping files and provisioning schema to flow those additional attributes.
+4. Add a pre-demo validation step that checks required joiner fields are present before running sync.
