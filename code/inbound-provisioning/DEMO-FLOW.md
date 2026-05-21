@@ -158,3 +158,5 @@ Finally, show:
 	- OfficeLocation
 3. Update mapping files and provisioning schema to flow those additional attributes.
 4. Add a pre-demo validation step that checks required joiner fields are present before running sync.
+5. Enable passwordless authentication in tenant baseline for demo identities.
+6. Set up Microsoft Entra Verified ID scenarios for demo storyline.
